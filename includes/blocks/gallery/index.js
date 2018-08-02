@@ -68,7 +68,7 @@ const blockAttributes = {
 export const name = 'core/gallery';
 
 export const settings = {
-	title: __( 'Gallery' ),
+	title: __( 'fancyBox Gallery' ),
 	description: __( 'Display multiple images in an elegantly organized tiled layout.' ),
 	icon: 'format-gallery',
 	category: 'common',

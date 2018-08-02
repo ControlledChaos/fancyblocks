@@ -91,7 +91,7 @@ const schema = {
 };
 
 export const settings = {
-	title: __( 'Image' ),
+	title: __( 'fancyBox Image' ),
 
 	description: __( 'They’re worth 1,000 words! Insert a single image.' ),
 
