@@ -7,3 +7,7 @@ Fancybox images, galleries and modals in the WordPress block editor.
 ![PHP version](https://img.shields.io/php-eye/symfony/symfony.svg?style=flat-square)
 
 Not ready for use!
+
+Fancybox is a "jQuery lightbox script for displaying images, videos and more. Touch enabled, responsive and fully customizable."
+
+[https://github.com/fancyapps/fancybox](https://github.com/fancyapps/fancybox)
