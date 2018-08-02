@@ -48,14 +48,46 @@ if ( ! defined( 'WPINC' ) ) {
  * Get plugins path to check for the Gutenberg plugin.
  *
  * @since 1.0.0
+ * @return void
+ *
  * @todo  Revisit this when the block editor is in core.
  */
 include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
 /**
+ * Check for the Gutenberg plugin dependency.
+ *
+ * @since  1.0.0
+ * @return void
+ *
+ * @link   https://wordpress.org/plugins/gutenberg/
+ *
+ * @todo  Revisit this when the block editor is in core.
+ */
+if ( ! is_plugin_active( 'gutenberg/gutenberg.php' ) ) {
+
+	add_action( 'admin_notices', 'fancyblocks_parent_notice' );
+
+}
+
+/**
+ * Get the parent plugin admin notice output.
+ *
+ * @since  1.0.0
+ * @return void
+ */
+function fancyblocks_parent_notice() {
+
+	require_once plugin_dir_path( __FILE__ ) . 'includes/partials/gutenberg-notice.php';
+
+}
+
+/**
  * Bail if Gutenberg is not active.
  *
  * @since 1.0.0
+ * @return void
+ *
  * @todo  Revisit this when the block editor is in core.
  */
 if ( ! is_plugin_active( 'gutenberg/gutenberg.php' ) ) {
