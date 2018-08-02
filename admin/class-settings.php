@@ -1,15 +1,15 @@
 <?php
 /**
- * Define the internationalization functionality.
+ * Settings class.
  *
  * @package    FancyBlocks
- * @subpackage Includes
+ * @subpackage Admin
  *
  * @since      1.0.0
  * @author     Greg Sweet <greg@ccdzine.com>
  */
 
-namespace FancyBlocks\Includes;
+namespace FancyBlocks\Admin;
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
@@ -17,15 +17,12 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 /**
- * Define the internationalization functionality.
- *
- * Loads and defines the internationalization files for this plugin
- * so that it is ready for translation.
+ * Admin functiontionality and settings.
  *
  * @since  1.0.0
  * @access public
  */
-class i18n {
+class Settings {
 
 	/**
 	 * Get an instance of the class.
@@ -44,8 +41,8 @@ class i18n {
 			// Set variable for new instance.
 			$instance = new self;
 
-			// Load the text domain.
-			$instance->load_plugin_textdomain();
+			// Require the class files.
+			$instance->dependencies();
 
 		}
 
@@ -59,26 +56,18 @@ class i18n {
 	 *
 	 * @since  1.0.0
 	 * @access private
-	 * @return void Constructor method is empty.
+	 * @return self
 	 */
 	private function __construct() {}
 
 	/**
-	 * Load the plugin text domain for translation.
+	 * Class dependency files.
 	 *
 	 * @since  1.0.0
-	 * @access public
+	 * @access private
 	 * @return void
 	 */
-	public function load_plugin_textdomain() {
-
-		load_plugin_textdomain(
-			'fancyblocks',
-			false,
-			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
-		);
-
-	}
+	private function dependencies() {}
 
 }
 
@@ -89,11 +78,11 @@ class i18n {
  * @access public
  * @return object Returns an instance of the class.
  */
-function fancyblocks_i18n() {
+function fancyblocks_settings() {
 
-	return i18n::instance();
+	return Settings::instance();
 
 }
 
 // Run an instance of the class.
-fancyblocks_i18n();
+fancyblocks_settings();

@@ -9,6 +9,9 @@
  * @author     Greg Sweet <greg@ccdzine.com>
  */
 
+
+namespace FancyBlocks\Admin;
+
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
 	die;
