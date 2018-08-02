@@ -257,3 +257,30 @@ function fancyblocks_deactivate_plugin() {
 	fancyblocks_deactivate();
 
 }
+
+/**
+ * Add a link to the media settings screen from the plugins screen.
+ *
+ * @param  array $links Default plugin links on the 'Plugins' admin page.
+ * @since  1.0.0
+ * @access public
+ * @return mixed[] Returns an HTML string for the settings page link.
+ *                 Returns an array of the settings link with the default plugin links.
+ */
+function fancyblocks_settings_link( $links ) {
+
+	// Create new settings link array as a variable.
+	$media = [
+		sprintf(
+			'<a href="%1s" class="fancyblocks-settings-link">%2s</a>',
+			admin_url( 'options-media.php' ),
+			esc_attr( 'Settings', 'fancyblocks' )
+		),
+	];
+
+	// Merge the new settings array with the default array.
+	return array_merge( $media, $links );
+
+}
+// Filter the default settings links with new array.
+add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'fancyblocks_settings_link' );
