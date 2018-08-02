@@ -73,7 +73,12 @@ class Admin {
 	 * @access private
 	 * @return void
 	 */
-	private function dependencies() {}
+	private function dependencies() {
+
+		// The core settings class for the plugin.
+		require_once FANCYBLOCKS_PATH . 'admin/class-settings.php';
+
+	}
 
 }
 

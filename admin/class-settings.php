@@ -67,7 +67,12 @@ class Settings {
 	 * @access private
 	 * @return void
 	 */
-	private function dependencies() {}
+	private function dependencies() {
+
+		// The settings class for the media screen.
+		require_once FANCYBLOCKS_PATH . 'admin/class-settings-fields-media.php';
+
+	}
 
 }
 
