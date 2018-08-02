@@ -1,6 +1,6 @@
 # FancyBlocks
 
-Fancybox images, galleries and modals in the WordPress block editor.
+FancyBox images, galleries and modals in the WordPress block editor.
 
 ![Gutenberg Ready](https://img.shields.io/badge/Gutenberg-ready-blue.svg)
 ![WordPress](https://img.shields.io/wordpress/v/akismet.svg?style=flat-square)
@@ -8,6 +8,6 @@ Fancybox images, galleries and modals in the WordPress block editor.
 
 Not ready for use!
 
-Fancybox is a "jQuery lightbox script for displaying images, videos and more. Touch enabled, responsive and fully customizable."
+FancyBox is a "jQuery lightbox script for displaying images, videos and more. Touch enabled, responsive and fully customizable."
 
 [https://github.com/fancyapps/fancybox](https://github.com/fancyapps/fancybox)
