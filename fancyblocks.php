@@ -43,6 +43,24 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 /**
+ * Get plugins path to check for the Gutenberg plugin.
+ *
+ * @since 1.0.0
+ * @todo  Revisit this when the block editor is in core.
+ */
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+
+/**
+ * Bail if Gutenberg is not active.
+ *
+ * @since 1.0.0
+ * @todo  Revisit this when the block editor is in core.
+ */
+if ( ! is_plugin_active( 'gutenberg/gutenberg.php' ) ) {
+	return;
+}
+
+/**
  * The core plugin class.
  *
  * Defines constants, gets the initialization class file
