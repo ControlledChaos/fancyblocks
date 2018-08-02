@@ -2,24 +2,26 @@
 /**
  * FancyBlocks plugin
  *
- * @package     FancyBlocks
- * @version     1.0.0
- * @author      Greg Sweet <greg@ccdzine.com>
- * @copyright   Copyright © 2018, Greg Sweet
- * @link        https://github.com/ControlledChaos/fancyblocks
- * @license     GPL-3.0+ http://www.gnu.org/licenses/gpl-3.0.txt
+ * @package           FancyBlocks
+ * @version           1.0.0
+ * @author            Greg Sweet <greg@ccdzine.com>
+ * @copyright         Copyright © 2018, Greg Sweet
+ * @link              https://github.com/ControlledChaos/fancyblocks
+ * @license           GPL-3.0+ http://www.gnu.org/licenses/gpl-3.0.txt
  *
- * Plugin Name:  FancyBlocks
- * Plugin URI:   https://github.com/ControlledChaos/fancyblocks
- * Description:  Fancybox images, galleries and modals in the WordPress block editor.
- * Version:      1.0.0
- * Author:       Controlled Chaos Design
- * Author URI:   http://ccdzine.com/
- * License:      GPL-3.0+
- * License URI:  https://www.gnu.org/licenses/gpl.txt
- * Text Domain:  fancyblocks
- * Domain Path:  /languages
- * Tested up to: 4.9.8
+ * Plugin Name:       FancyBlocks
+ * Plugin URI:        https://github.com/ControlledChaos/fancyblocks
+ * Description:       Fancybox images, galleries and modals in the WordPress block editor.
+ * Version:           1.0.0
+ * Author:            Controlled Chaos Design
+ * Author URI:        http://ccdzine.com/
+ * License:           GPL-3.0+
+ * License URI:       https://www.gnu.org/licenses/gpl.txt
+ * Text Domain:       fancyblocks
+ * Domain Path:       /languages
+ * Requires at least: 4.9
+ * Tested up to:      4.9.8 beta
+ * Requires PHP:      5.4
  */
 
 /*
